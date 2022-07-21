@@ -1,24 +1,31 @@
-# README
+## About
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This project contains following functionalities:
+- Devise signup/login functionality integrated with material-ui.
 
-Things you may want to cover:
+- signup/login is possible using json APIs as well. We can send curl request or send request using any api platform.
 
-* Ruby version
+- A user can send a referral email to any email address. After that non-user can use the link sent in the referral mail for signup. Then, that non-user will be created with `referred_by_id`. So that, We can find all referrals of a user.
 
-* System dependencies
+### Requirements
 
-* Configuration
+- Install Ruby version: 3.0.1.
+- Install `postgresql` and start it.
 
-* Database creation
+## Local Development Setup
 
-* Database initialization
+```
+bin/setup
+```
 
-* How to run the test suite
+Start the server by executing the following command.
 
-* Services (job queues, cache servers, search engines, etc.)
+```
+bin/dev
+```
+We can visit the app at  http://localhost:3000.
 
-* Deployment instructions
-
-* ...
+## Testing
+```
+rails test
+```

@@ -1,0 +1,5 @@
+Hello <%= @referred_to_email %>!
+
+<%= @referrer.email %> has referred you. You can sign up through the url below.
+
+<%= new_user_registration_url(referral_token: @referrer.referral_token) %>

@@ -2,18 +2,27 @@
 <html>
   <head>
     <title>DeviseMaterialUiAuthentication</title>
+
     <meta name="viewport" content="width=device-width,initial-scale=1">
+
     <%= csrf_meta_tags %>
+
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+
     <%= javascript_include_tag "application", "data-turbo-track": "reload", defer: true %>
   </head>
 
-  <body>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
+  <body class="<%= controller_name %>">
+    <%= render 'shared/header' %>
 
-    <%= yield %>
+    <main class="container">
+      <div class="primary-content">
+        <%= render "shared/flash_messages" %>
+
+        <%= yield %>
+      </div>
+    </main>
   </body>
 </html>

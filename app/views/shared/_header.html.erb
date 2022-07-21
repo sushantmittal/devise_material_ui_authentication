@@ -1,0 +1,9 @@
+<% if user_signed_in? %>
+  <app-header
+    props-json='{
+      "email":"<%= current_user.email %>",
+      "logoutPath":"<%= destroy_user_session_path %>"
+    }'
+  >
+  </app-header>
+<% end %>

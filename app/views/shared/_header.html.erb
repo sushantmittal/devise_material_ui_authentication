@@ -2,6 +2,7 @@
   <app-header
     props-json='{
       "email":"<%= current_user.email %>",
+      "referPath":"<%= new_user_referrals_path %>",
       "logoutPath":"<%= destroy_user_session_path %>"
     }'
   >

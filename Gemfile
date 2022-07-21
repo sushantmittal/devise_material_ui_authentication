@@ -6,14 +6,17 @@ ruby "3.0.1"
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "7.0.1"
 
+# Use postgresql as the database for Active Record
+gem "pg", "~> 1.4"
+
+# Override migration methods to support UUID columns without having to be explicit about it. https://github.com/fnando/ar-uuid
+gem "ar-uuid", "~> 0.2.2"
+
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
 
 # Use SCSS for stylesheets
 gem "sass-rails"
-
-# Use sqlite3 as the database for Active Record
-gem "sqlite3", "~> 1.4"
 
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", "~> 5.0"

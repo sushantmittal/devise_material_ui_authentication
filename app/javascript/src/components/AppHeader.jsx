@@ -14,7 +14,7 @@ const useStyles = makeStyles(() => ({
   }
 }));
 
-const AppHeader = ({email, logoutPath}) => {
+const AppHeader = ({email, referPath, logoutPath}) => {
   const { toolbar, menuButton } = useStyles();
 
   return (
@@ -25,6 +25,7 @@ const AppHeader = ({email, logoutPath}) => {
             Hi {email}
           </Typography>
 
+          <a href={referPath} className={menuButton}>Refer</a>
           <a href={logoutPath} data-turbo-method="delete" className={menuButton}>Log Out</a>
         </Toolbar>
       </AppBar>

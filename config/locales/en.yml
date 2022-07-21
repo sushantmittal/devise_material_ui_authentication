@@ -31,3 +31,10 @@
 
 en:
   hello: "Hello world"
+  referrals:
+    user_already_exists: "User with email '%{email}' already exists."
+    success: "Sent referral email to '%{email}'."
+  mailer:
+    send_referral_email:
+      subject: Referral email
+      referred_you: "%{email} has referred you. You can sign up through the link below."

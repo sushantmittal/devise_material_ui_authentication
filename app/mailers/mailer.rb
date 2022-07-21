@@ -1,4 +1,4 @@
-class Mailer < ActionMailer::Base
+class Mailer < ApplicationMailer
   def send_referral_email(referrer, referred_to_email)
     @referrer = referrer
     @referred_to_email = referred_to_email
